@@ -21,6 +21,18 @@ html {
     font-weight: 700;
 }
 
+
+figure,
+ul{
+    margin: 0;
+}
+
+img{
+    width:100%;
+    max-width: 100%;
+    height: auto;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -158,20 +170,73 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*
+ * Layout
+ */
+
+ .box{
+     margin-right: auto;
+     margin-left: auto;
+     width:100%;
+     max-width: 1175px;
+     padding-right: 15px;
+     padding-left: 15px;
+ }
 
 
+ /*
+ * Conten style
+ */
 
+ .header{
+     font-family: 'Raleway';
+     font-weight: 400;
+ }
 
+    .header a{
+        text-decoration: none;
+    }
+    .header__top{
+        display: flex;
+        justify-content: space-between;
+        padding: 0.2rem 0;
+        align-items: center;
+        color:#CCCCCC;
+        font-weight: 500;
+        border-bottom: 2px solid #CCCCCC;
+    }
+        .header__top a{
+            color:#CCCCCC;
+            
+        }
 
+        .header__rs ul{
+            display: flex;
+        }
+        .header__rs li{
+            margin:0 0.15rem;
+        }
+        .header__rs a{
+            font-size:1.4rem;
+        }
+    .header__bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2rem 0;
+    }
 
+.nav__main ul{
+    display: flex;
+    justify-content: space-around;
+}
+    .nav__main li{
+        margin:0 0.5rem;
+    }
 
-
-
-
-
-
-
-
+    .nav__main a{
+        color:#4D4D4D;
+    }
 
 
 /* ==========================================================================
@@ -184,6 +249,10 @@ textarea {
 
 .hidden {
     display: none !important;
+}
+
+.list-none{
+    list-style-type: none;
 }
 
 /*
