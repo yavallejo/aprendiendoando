@@ -1,0 +1,20 @@
+Fuentes
+
+Raleway extrabold
+Raleway Medium
+Raleway Regular
+
+Colores
+
+#CCCCCC : textos header top
+#4D4D4D : Color menu
+
+
+Fuentes
+
+dosis 
+
+Regular 400
+medium 500
+semi-bold 600
+bold 700

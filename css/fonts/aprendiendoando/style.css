@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'aprendiendoandoicon';
+  src:  url('fonts/aprendiendoandoicon.eot?bm82eu');
+  src:  url('fonts/aprendiendoandoicon.eot?bm82eu#iefix') format('embedded-opentype'),
+    url('fonts/aprendiendoandoicon.ttf?bm82eu') format('truetype'),
+    url('fonts/aprendiendoandoicon.woff?bm82eu') format('woff'),
+    url('fonts/aprendiendoandoicon.svg?bm82eu#aprendiendoandoicon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="aprendiendoando-"], [class*=" aprendiendoando-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'aprendiendoandoicon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.aprendiendoando-correo:before {
+  content: "\e900";
+}
+.aprendiendoando-facebook:before {
+  content: "\e901";
+}
+.aprendiendoando-rss:before {
+  content: "\e902";
+}
+.aprendiendoando-twitter:before {
+  content: "\e903";
+}
+.aprendiendoando-youtube:before {
+  content: "\e904";
+}
+
