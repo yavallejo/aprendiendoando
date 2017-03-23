@@ -41,15 +41,6 @@ html {
 
 
 @font-face {
-    font-family: 'stranger_back_in_the_nightRg';
-    src: url('fonts/stranger/stranger_back_in_the_night-webfont.woff2') format('woff2'),
-         url('fonts/stranger/stranger_back_in_the_night-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
   font-family: 'aprendiendoandoicon';
   src:  url('fonts/aprendiendoando/aprendiendoandoicon.eot?bm82eu');
   src:  url('fonts/aprendiendoando/aprendiendoandoicon.eot?bm82eu#iefix') format('embedded-opentype'),
@@ -157,8 +148,6 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
 
 
 
