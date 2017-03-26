@@ -149,6 +149,73 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*
+ * Helpers
+ */
+
+.box{
+    width: 100%;
+    max-width: 1175px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.list-none{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+}
+
+
+
+.decoration-none{
+     text-decoration: none;
+}
+
+.header{
+    font-family: 'Relaway' , Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+    .header__top,
+    .header__bottom,
+    .nav__main ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header__top,
+    .header__top a{
+        color:#CCCCCC;
+    }
+
+    .header__top{
+        border-bottom: 2px solid #CCCCCC;
+        padding: 0.7rem 0;
+    }
+
+    .header__bottom{
+        align-items: center;
+
+    }
+
+
+.nav__main li{
+    margin:0 0.5rem;
+}
+
+
+.nav__main a{
+    color: #4D4D4D;
+}
+    .nav__main a.active{
+        font-weight: 800;
+    }
+
+
+
+
 
 
 
