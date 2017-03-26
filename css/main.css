@@ -192,22 +192,28 @@ textarea {
 
     .header__top{
         border-bottom: 2px solid #CCCCCC;
-        padding: 0.7rem 0;
+        padding: 0.5rem 0 0.2rem;
+    }
+
+    .header__rs a{
+        font-size: 1.3rem;
     }
 
     .header__bottom{
         align-items: center;
-
+        padding: 1rem 0;
     }
 
 
 .nav__main li{
-    margin:0 0.5rem;
+    margin:0 0.8rem;
 }
 
 
 .nav__main a{
     color: #4D4D4D;
+    font-size:1.4rem;
+    overflow: hidden;
 }
     .nav__main a.active{
         font-weight: 800;
