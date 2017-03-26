@@ -19,19 +19,10 @@ html {
     line-height: 1.4;
     font-family: 'Dosis', sans-serif;
     font-weight: 700;
+    
 }
 
 
-figure,
-ul{
-    margin: 0;
-}
-
-img{
-    width:100%;
-    max-width: 100%;
-    height: auto;
-}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -51,15 +42,6 @@ img{
     text-shadow: none;
 }
 
-
-@font-face {
-    font-family: 'stranger_back_in_the_nightRg';
-    src: url('fonts/stranger/stranger_back_in_the_night-webfont.woff2') format('woff2'),
-         url('fonts/stranger/stranger_back_in_the_night-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 @font-face {
   font-family: 'aprendiendoandoicon';
@@ -171,72 +153,149 @@ textarea {
    ========================================================================== */
 
 /*
- * Layout
+ * Helpers
  */
 
- .box{
-     margin-right: auto;
-     margin-left: auto;
-     width:100%;
-     max-width: 1175px;
-     padding-right: 15px;
-     padding-left: 15px;
- }
-
-
- /*
- * Conten style
- */
-
- .header{
-     font-family: 'Raleway';
-     font-weight: 400;
- }
-
-    .header a{
-        text-decoration: none;
-    }
-    .header__top{
-        display: flex;
-        justify-content: space-between;
-        padding: 0.2rem 0;
-        align-items: center;
-        color:#CCCCCC;
-        font-weight: 500;
-        border-bottom: 2px solid #CCCCCC;
-    }
-        .header__top a{
-            color:#CCCCCC;
-            
-        }
-
-        .header__rs ul{
-            display: flex;
-        }
-        .header__rs li{
-            margin:0 0.15rem;
-        }
-        .header__rs a{
-            font-size:1.4rem;
-        }
-    .header__bottom{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 2rem 0;
-    }
-
-.nav__main ul{
-    display: flex;
-    justify-content: space-around;
+.box{
+    width: 100%;
+    max-width: 1175px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-    .nav__main li{
-        margin:0 0.5rem;
+
+.list-none{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+}
+
+/*
+ * Botones
+ */
+
+.button{
+    border-radius: 10px;
+    font-family: 'Dosis';
+    font-weight: 400;
+    text-decoration: none;
+    color:#fff;
+    padding:0.5rem 1rem;
+    margin:1rem 0;
+    display: inline-block;
+}
+
+    .button--main{
+        background-color: #FF5253;
     }
 
-    .nav__main a{
-        color:#4D4D4D;
+
+
+.decoration-none{
+     text-decoration: none;
+}
+
+.header{
+    font-family: 'Relaway' , Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+    .header__top,
+    .header__bottom,
+    .nav__main ul{
+        display: flex;
+        justify-content: space-between;
     }
+
+    .header__top,
+    .header__top a{
+        color:#CCCCCC;
+    }
+
+    .header__top{
+        border-bottom: 2px solid #CCCCCC;
+        padding: 0.5rem 0 0.2rem;
+    }
+
+    .header__rs a{
+        font-size: 1.3rem;
+    }
+
+    .header__bottom{
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+
+.nav__main li{
+    margin:0 0.8rem;
+}
+
+
+.nav__main a{
+    color: #4D4D4D;
+    font-size:1.4rem;
+    overflow: hidden;
+}
+    .nav__main a.active{
+        font-weight: 800;
+    }
+
+.main{
+    margin:1rem 0;
+}
+
+.slider{
+    background-image: url("../img/startup.jpg");
+    padding: 8em 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: #fff;
+    position: relative;
+}
+
+    .slider__information{
+        z-index: 1;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .slider__left{
+        width:500px;
+        max-width: 500px;
+    }
+
+.overlay{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+.title{
+    font-family: 'Dosis',Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    margin:0.5rem 0;
+}
+
+    .title--big{
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 4rem;
+        line-height: 1.3;
+    }
+
+    .title--small{
+        font-weight: 400;
+        font-size:1.5rem;
+    }
+        
+
 
 
 /* ==========================================================================
@@ -249,10 +308,6 @@ textarea {
 
 .hidden {
     display: none !important;
-}
-
-.list-none{
-    list-style-type: none;
 }
 
 /*
