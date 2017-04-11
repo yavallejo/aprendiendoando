@@ -14,11 +14,11 @@
 font-family: 'Raleway', sans-serif;*/
 
 html {
-    color: #222;
+    color: #4D4D4D;
     font-size: 1em;
     line-height: 1.4;
     font-family: 'Dosis', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 /*
@@ -289,7 +289,38 @@ textarea {
         font-size: 1.5rem;
     }
 
+/*Section de estadiscticas de youtube*/
 
+.youtube-analytics{
+    background-color: #F9F9F9;
+    padding: 5rem 0;
+}
+
+.youtube-analytics__date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.youtube-analytics__number span{
+    display: block;
+    color:#FF5253;
+    font-size: 4.5rem;
+}
+
+.youtube-analytics__number strong{
+    color:#0071BC;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.youtube-analytics__information{
+    text-align: center;
+    max-width: 850px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:1.6rem;
+}
 
 
 
