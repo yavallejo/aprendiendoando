@@ -162,6 +162,52 @@ textarea {
     padding-right: 15px;
 }
 
+    .box__courses{
+        display: flex;
+        justify-content: space-around;
+        color:#fff;
+        padding: 5rem 0;
+        
+    }
+
+    .box__courses--one{
+        background-color: #369DC1;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 10px;
+        padding: 2rem 0;
+        max-width: 485px;
+        width: 100%;
+    }
+
+    .box__courses--one div{
+        width: 100%;
+        text-align: right;
+        padding-right: 1rem;
+    }
+
+    .box__courses--one h4{
+        font-size: 2.5rem;
+        font-weight: 500;
+        border-bottom: 1px solid #fff;
+        margin:0;
+        text-align: right;
+        line-height: 1;
+        padding-bottom: 0.7rem;
+        
+    }
+
+    .box__courses--one p{
+        font-size: 1.2rem;
+    }
+
+    .box__courses--dos{
+        background-color: #566270;
+    }
+
+    
+
+
 .list-none{
     list-style-type: none;
     margin:0;
