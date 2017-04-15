@@ -162,6 +162,49 @@ textarea {
     padding-right: 15px;
 }
 
+    .box__courses{
+        display: flex;
+        justify-content: space-around;
+        color:#fff;
+        padding: 5rem 0;
+    }
+
+        .box__courses--one{
+            background-color: #369DC1;
+            display: flex;
+            justify-content: space-around;
+            border-radius: 10px;
+            padding: 2rem;
+            max-width: 485px;
+            width: 100%;
+        }
+
+        .box__courses--one div{
+            width: 100%;
+            text-align: right;
+            padding-right: 1rem;
+        }
+
+        .box__courses--one h4{
+            font-size: 2.5rem;
+            font-weight: 500;
+            border-bottom:1px solid #fff;
+            margin: 0;
+            text-align: right;
+            line-height: 1;
+            padding-bottom: 0.7rem;
+        }
+
+        .box__courses--one p{
+            font-size: 1.2rem;
+        }
+
+
+
+        .box__courses--two{
+            background-color:#566270;
+        }
+
 .list-none{
     list-style-type: none;
     margin:0;
@@ -189,7 +232,7 @@ textarea {
      color: #fff;
      padding:0.5rem 1rem;
      margin:1rem 0;
-     display: inline-block;     
+     display: inline-block;  
  }
 
     .button--main{
@@ -289,8 +332,6 @@ textarea {
         font-size: 1.5rem;
     }
 
-/*Section de estadiscticas de youtube*/
-
 .youtube-analytics{
     background-color: #F9F9F9;
     padding: 5rem 0;
@@ -299,28 +340,36 @@ textarea {
 .youtube-analytics__date{
     display: flex;
     justify-content: center;
+    align-content: center;
     align-items: center;
-}
-
-.youtube-analytics__number span{
-    display: block;
-    color:#FF5253;
-    font-size: 4.5rem;
-}
-
-.youtube-analytics__number strong{
-    color:#0071BC;
-    font-size: 2rem;
-    font-weight: 500;
 }
 
 .youtube-analytics__information{
     text-align: center;
-    max-width: 850px;
+    max-width: 70%;
+    width: 100%;
     margin-left:auto;
     margin-right:auto;
-    font-size:1.6rem;
+    font-size: 1.6rem;
+    
+    
 }
+
+.youtube-analytics__number span{
+    color: #FF5253;
+    display:block;
+    font-size:4.5rem;
+    
+}
+
+.youtube-analytics__number strong{
+    color: #0071BC;
+    display:block;
+    font-size:2rem;
+    font-weight: 500;
+}
+
+
 
 
 
