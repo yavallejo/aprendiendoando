@@ -167,43 +167,46 @@ textarea {
         justify-content: space-around;
         color:#fff;
         padding: 5rem 0;
+        
     }
 
-        .box__courses--one{
-            background-color: #369DC1;
-            display: flex;
-            justify-content: space-around;
-            border-radius: 10px;
-            padding: 2rem;
-            max-width: 485px;
-            width: 100%;
-        }
+    .box__courses--one{
+        background-color: #369DC1;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 10px;
+        padding: 2rem 0;
+        max-width: 485px;
+        width: 100%;
+    }
 
-        .box__courses--one div{
-            width: 100%;
-            text-align: right;
-            padding-right: 1rem;
-        }
+    .box__courses--one div{
+        width: 100%;
+        text-align: right;
+        padding-right: 1rem;
+    }
 
-        .box__courses--one h4{
-            font-size: 2.5rem;
-            font-weight: 500;
-            border-bottom:1px solid #fff;
-            margin: 0;
-            text-align: right;
-            line-height: 1;
-            padding-bottom: 0.7rem;
-        }
+    .box__courses--one h4{
+        font-size: 2.5rem;
+        font-weight: 500;
+        border-bottom: 1px solid #fff;
+        margin:0;
+        text-align: right;
+        line-height: 1;
+        padding-bottom: 0.7rem;
+        
+    }
 
-        .box__courses--one p{
-            font-size: 1.2rem;
-        }
+    .box__courses--one p{
+        font-size: 1.2rem;
+    }
 
+    .box__courses--dos{
+        background-color: #566270;
+    }
 
+    
 
-        .box__courses--two{
-            background-color:#566270;
-        }
 
 .list-none{
     list-style-type: none;
@@ -218,6 +221,22 @@ textarea {
     right: 0;
     bottom: 0;
     left: 0; 
+}
+
+.img-responsive{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.sin-margin{
+    margin: 0;
+    padding: 0;
+}
+
+.decoration-none{
+    text-decoration: none;
+    color: #4D4D4D;
 }
 
 
@@ -274,6 +293,96 @@ textarea {
         padding: 1rem 0;
     }
 
+
+
+.list-courses{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+    .list-courses__item{
+        max-width: 350px;
+        border:1px solid #D2D2D2;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 1.25rem 0;
+        -moz-box-shadow: 1px 1px 3px #D2D2D2;
+        -webkit-box-shadow: 1px 1px 3px #D2D2D2;
+        box-shadow: 1px 1px 3px #D2D2D2;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+        .list-courses__item:hover{
+           -moz-box-shadow: 2px 2px 5px #ADADAD;
+            -webkit-box-shadow: 2px 2px 5px #ADADAD;
+            box-shadow: 2px 2px 5px #ADADAD;
+        }
+
+    .list-courses__information{
+        padding: 1rem;
+    }
+
+        .list-courses__information h3{
+            font-weight: 500;
+            font-size:1.5rem;
+            
+        }
+
+         .list-courses__information p{
+            font-size:1.1rem;
+            border-bottom:1px solid #CDCDCD;
+            padding-bottom: 0.5rem;
+            
+        }
+    
+    .list-courses__author{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem 1rem;
+        font-family: 'Raleway', sans-serif;
+    }
+
+        
+
+    .list-courses__author figure a{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-style: italic;
+    }
+
+    .list-courses__author figure img{
+        max-width: 30%;
+        margin-right: 0.5rem;
+    }
+
+    .list-courses__author div a{
+        font-weight: 400;
+        display: block;
+    }
+
+        
+
+
+.price{
+    text-align: center;
+    padding: 0.5rem 0;
+    color:#fff;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+    .price--free{
+        background-color: #FF5253;
+    }
+
+    .price--premiun{
+         background-color: #6CC8BD;
+    }
 
 .nav__main li{
     margin:0 0.8rem;
