@@ -162,6 +162,10 @@ textarea {
     padding-right: 15px;
 }
 
+    .box--center{
+        max-width: 1000px;
+    }
+
     .box__courses{
         display: flex;
         justify-content: space-around;
@@ -234,6 +238,11 @@ textarea {
     padding: 0;
 }
 
+.text-center{
+    text-align: center;
+    display: block;
+}
+
 .decoration-none{
     text-decoration: none;
     color: #4D4D4D;
@@ -251,7 +260,8 @@ textarea {
      color: #fff;
      padding:0.5rem 1rem;
      margin:1rem 0;
-     display: inline-block;  
+     display: inline-block;
+     border: 0;
  }
 
     .button--main{
@@ -440,6 +450,66 @@ textarea {
         font-weight: 400;
         font-size: 1.5rem;
     }
+
+.register{
+    background-color: #566270;
+    color: #fff;
+}
+
+    .register .box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5rem 0;
+    }
+
+    .register__testimonial{
+        max-width:40%;
+    }
+
+        .register__testimonial strong{
+            font-size: 2.2rem;
+            font-weight: 600;
+        }
+
+        .register__user{
+            display: flex;
+            align-items: center;
+            margin: 1rem 0;
+        }
+
+        .register__information{
+            margin-left:1rem;
+            border-bottom:1px solid #fff;
+            padding-bottom:1rem;
+        }
+
+    .register__newsletter{
+       max-width:25%;
+       border:1px solid #fff;
+       border-radius:10px;
+       padding: 3rem 1rem;
+    }
+
+        .register__newsletter strong{
+            text-align: center;
+            font-size: 1.6rem;
+            font-weight: 400;
+            display: block;
+        }
+
+        .register__newsletter input[type="text"]{
+            display: block;
+            width: 100%;
+            text-align: center;
+            border-radius: 5px;
+            border:0;
+            padding:0.5rem;
+            box-sizing: border-box;
+        }
+
+
+
 
 .youtube-analytics{
     background-color: #F9F9F9;
