@@ -161,13 +161,15 @@ textarea {
     padding-left: 15px;
     padding-right: 15px;
 }
+    .box--center{
+        max-width: 1000px;
+    }
 
     .box__courses{
         display: flex;
         justify-content: space-around;
         color:#fff;
         padding: 5rem 0;
-        
     }
 
     .box__courses--one{
@@ -205,9 +207,6 @@ textarea {
         background-color: #566270;
     }
 
-    
-
-
 .list-none{
     list-style-type: none;
     margin:0;
@@ -239,6 +238,10 @@ textarea {
     color: #4D4D4D;
 }
 
+.text-center{
+        text-align: center;
+}
+
 
 /*
  * Botones
@@ -251,7 +254,8 @@ textarea {
      color: #fff;
      padding:0.5rem 1rem;
      margin:1rem 0;
-     display: inline-block;  
+     display: inline-block;
+     border:0; 
  }
 
     .button--main{
@@ -384,10 +388,62 @@ textarea {
          background-color: #6CC8BD;
     }
 
+.register{
+    background-color:#566270;
+    color: #fff;
+}
+
+    .register .box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5rem 0;
+    }
+
+    .register__testimonial{
+        width: 40%;
+    }
+
+    .register__newsletter{
+        width: 25%;
+    }
+
+    .register__testimonial strong{
+        font-size: 2.2rem;
+        font-weight: 600;
+    }
+
+    .register__newsletter{
+        border:1px solid #fff;
+        border-radius: 10px;
+        padding: 1rem;
+        
+    }
+
+        .register__newsletter h4{
+            font-size: 400;
+            font-size: 1.6rem;
+            text-align: center;
+        }
+
+        .register__newsletter form{
+            text-align: center;
+            
+        }
+
+        .register__newsletter form input[type="text"]{
+            display: block;
+            width: 100%;
+            text-align: center;
+            border-radius:5px;
+            border:0;
+            padding:0.5rem;
+            box-sizing: border-box;
+        }
+
 .nav__main li{
     margin:0 0.8rem;
 }
-
 
 .nav__main a{
     color: #4D4D4D;
@@ -477,25 +533,6 @@ textarea {
     font-size:2rem;
     font-weight: 500;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
