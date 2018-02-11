@@ -90,6 +90,14 @@ html {
  * A better looking default horizontal rule
  */
 
+a{
+ transition: all .3s ease-in;
+}
+
+a:hover{
+    color: #0071BC;
+}
+
 hr {
     display: block;
     height: 1px;
@@ -122,7 +130,7 @@ fieldset {
     border: 0;
     margin: 0;
     padding: 0;
-   
+
 }
 
 /*
@@ -152,6 +160,16 @@ textarea {
  * Helpers
  */
 
+ *{
+    box-sizing: border-box;
+ }
+
+ img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+ }
+
 .box{
     width: 100%;
     max-width: 1175px;
@@ -169,20 +187,21 @@ textarea {
         display: flex;
         justify-content: space-around;
         color:#fff;
-        padding: 5rem 0;
-        
+        padding: 5rem 15px;
+        flex-direction: column;
     }
 
     .box__courses--one{
         background-color: #369DC1;
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
         border-radius: 10px;
         padding: 2rem 0;
         max-width: 485px;
         width: 100%;
+        margin-bottom: 1rem;
     }
-
     .box__courses--one div{
         width: 100%;
         text-align: right;
@@ -197,7 +216,6 @@ textarea {
         text-align: right;
         line-height: 1;
         padding-bottom: 0.7rem;
-        
     }
 
     .box__courses--one p{
@@ -208,8 +226,21 @@ textarea {
         background-color: #566270;
     }
 
-    
+    @media screen and (min-width: 768px){
+        .box__courses{
+            flex-direction: row;
+        }
 
+         .box__courses--one{
+            margin-bottom: 0;
+            flex-direction: row;
+            justify-content: space-around;
+         }
+    }
+
+.text--uppercase{
+    text-transform: uppercase;
+}
 
 .list-none{
     list-style-type: none;
@@ -223,7 +254,7 @@ textarea {
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0; 
+    left: 0;
 }
 
 .img-responsive{
@@ -274,7 +305,8 @@ textarea {
 .footer{
     display: flex;
     align-items: center;
-    padding: 2rem 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     color:#4D4D4D;
     flex-direction: column;
 }
@@ -309,15 +341,97 @@ textarea {
         padding: 0.5rem 0 0.2rem;
     }
 
+    .header__rs{
+        width: 100%;
+    }
+
+    .header__rs ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    .header__rs li{
+        margin:0.2rem;
+    }
+
     .header__rs a{
         font-size: 1.3rem;
+        transition: all .3s ease-in;
+    }
+
+        .header__rs a:hover{
+            color:#0071BC;
+        }
+
+    .header__mail{
+        display: none;
+    }
+
+    @media screen and (min-width: 768px){
+        .header__mail{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .header__mail a{
+            transition: .3s all ease-in;
+        }
+
+        .header__mail a:hover{
+            color: #0071BC;
+        }
+
+
+        .aprendiendoando-correo{
+            margin-right: 0.5rem;
+
+        }
+
+        .aprendiendoando-correo:hover{
+            color: #0071BC;
+        }
+
+        .header__rs ul{
+            justify-content: flex-end;
+        }
     }
 
     .header__bottom{
         align-items: center;
         padding: 1rem 0;
+        justify-content: center;
     }
 
+    @media screen and (min-width: 768px){
+        .header__bottom{
+            justify-content: space-between;
+        }
+    }
+@media screen and (min-width: 768px){
+      .logo{
+        max-width: 230px;
+    }
+}
+
+@media screen and (min-width: 900px){
+      .logo{
+        max-width: 300px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+      .logo{
+        max-width: 350px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+      .logo{
+        max-width: 400px;
+    }
+}
 
 
 .list-courses{
@@ -346,6 +460,12 @@ textarea {
             box-shadow: 2px 2px 5px #ADADAD;
         }
 
+    @media screen and (min-width: 768px){
+        .list-courses__item{
+            margin-top: 0;
+        }
+    }
+
     .list-courses__information{
         padding: 1rem;
     }
@@ -353,16 +473,16 @@ textarea {
         .list-courses__information h3{
             font-weight: 500;
             font-size:1.5rem;
-            
+
         }
 
          .list-courses__information p{
             font-size:1.1rem;
             border-bottom:1px solid #CDCDCD;
             padding-bottom: 0.5rem;
-            
+
         }
-    
+
     .list-courses__author{
         display: flex;
         justify-content: center;
@@ -371,7 +491,7 @@ textarea {
         font-family: 'Raleway', sans-serif;
     }
 
-        
+
 
     .list-courses__author figure a{
         display: flex;
@@ -406,25 +526,86 @@ textarea {
          background-color: #6CC8BD;
     }
 
-.nav__main li{
-    margin:0 0.8rem;
-}
 
 
-.nav__main a{
-    color: #4D4D4D;
-    font-size:1.4rem;
-    overflow: hidden;
+.nav__main{
+    display: none;
 }
+    .nav__main li{
+        margin:0 0.8rem;
+    }
+
+    .nav__main li:last-child{
+        margin-right: 0;
+    }
+    .nav__main a{
+        color: #4D4D4D;
+        font-size:1.4rem;
+        overflow: hidden;
+    }
     .nav__main a.active{
         font-weight: 800;
     }
+
+@media screen and (min-width: 768px){
+    .nav__main{
+        display: block;
+    }
+}
+
+/*Menu de navegación*/
+
+
+
+
+
+.snip1135 a {
+  padding: 0.5em 0;
+  position: relative;
+  letter-spacing: 1px;
+
+}
+.snip1135 a:before,
+.snip1135 a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1135 a:before {
+  bottom: 0;
+  display: block;
+  height: 3px;
+  width: 0%;
+  content: "";
+  background-color: #2980b9;
+}
+.snip1135 a:after {
+  left: 0;
+  top: 0;
+  padding: 0.38em 0;
+  position: absolute;
+  content: attr(data-hover);
+  color: #0071BC;
+  white-space: nowrap;
+  max-width: 0%;
+  overflow: hidden;
+}
+.snip1135 a:hover:before,
+.snip1135 .current a:before {
+  opacity: 1;
+  width: 100%;
+}
+.snip1135 a:hover:after,
+.snip1135 .current a:after {
+  max-width: 100%;
+}
 
 .main{
     margin:1rem 0;
 }
 
 .slider{
+    display: none;
     background-image: url("../img/startup.jpg");
     padding:8rem 0;
     background-repeat: no-repeat;
@@ -444,6 +625,12 @@ textarea {
 
     .slider__left{
         max-width: 500px;
+    }
+
+    @media screen and (min-width:768px){
+        .slider{
+            display: block;
+        }
     }
 
 .title{
@@ -473,10 +660,12 @@ textarea {
         justify-content: space-between;
         align-items: center;
         padding: 5rem 0;
+        flex-direction: column;
     }
 
     .register__testimonial{
-        max-width:40%;
+        /*max-width:90%;*/
+        display: none;
     }
 
         .register__testimonial strong{
@@ -497,7 +686,7 @@ textarea {
         }
 
     .register__newsletter{
-       max-width:25%;
+       max-width:90%;
        border:1px solid #fff;
        border-radius:10px;
        padding: 3rem 1rem;
@@ -520,66 +709,85 @@ textarea {
             box-sizing: border-box;
         }
 
+@media screen and (min-width: 768px){
+    .register .box{
+        flex-direction: row;
+    }
+
+    .register__testimonial{
+        max-width:40%;
+        display: block;
+    }
+
+    .register__newsletter{
+        max-width: 25%;
+    }
+}
+
 
 
 
 .youtube-analytics{
     background-color: #F9F9F9;
-    padding: 5rem 0;
+    padding: 3rem 0;
 }
 
-.youtube-analytics__date{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
+    .youtube-analytics__date{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
 
-.youtube-analytics__information{
-    text-align: center;
-    max-width: 70%;
-    width: 100%;
-    margin-left:auto;
-    margin-right:auto;
-    font-size: 1.6rem;
-    
-    
-}
+    .youtube-analytics__date figure{
+        max-width: 70px;
+        width: 100%;
+        margin:1rem;
+    }
 
-.youtube-analytics__number span{
-    color: #FF5253;
-    display:block;
-    font-size:4.5rem;
-    
-}
+    @media screen and (min-width: 768px){
+       .youtube-analytics__date figure{
+        max-width: 119px;
+       }
+    }
 
+    .youtube-analytics__information{
+        text-align: center;
+        max-width: 80%;
+        width: 100%;
+        margin-left:auto;
+        margin-right:auto;
+        font-size: 1.4rem;
+    }
 
+    .youtube-analytics__number span{
+        color: #FF5253;
+        display:block;
+        font-size:3.5rem;
+    }
+    .youtube-analytics__number strong{
+        color: #0071BC;
+        display:block;
+        font-size:1.3rem;
+        font-weight: 500;
+    }
 
-.youtube-analytics__number strong{
-    color: #0071BC;
-    display:block;
-    font-size:2rem;
-    font-weight: 500;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @media screen and (min-width: 768px){
+        .youtube-analytics{
+             padding-top: 5rem;
+             padding-bottom: 5rem;
+        }
+            .youtube-analytics__information{
+                max-width: 70%;
+                font-size: 1.6rem;
+            }
+            .youtube-analytics__number span{
+                font-size:4.5rem;
+            }
+            .youtube-analytics__number strong{
+               font-size:2rem;
+            }
+    }
 
 /* ==========================================================================
    Helper classes
