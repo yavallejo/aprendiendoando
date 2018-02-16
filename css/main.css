@@ -170,6 +170,32 @@ textarea {
     height: auto;
  }
 
+ /*
+ * Botones
+ */
+
+ .button{
+     border-radius: 10px;
+     font-family: 'Dosis';
+     text-decoration: none;
+     color: #fff;
+     padding:0.5rem 1rem;
+     margin:1rem 0;
+     display: inline-block;
+     border: 0;
+ }
+
+    .button--main{
+        background-color: #FF5253;
+        text-align: center;
+        max-width: 180px;
+        margin-right: auto;
+        margin-left: auto;
+        display:block;
+    }
+
+
+
 .box{
     width: 100%;
     max-width: 1175px;
@@ -194,11 +220,10 @@ textarea {
     .box__courses--one{
         background-color: #369DC1;
         display: flex;
-        flex-direction: column;
         align-items: center;
         border-radius: 10px;
         padding: 2rem 0;
-        max-width: 485px;
+
         width: 100%;
         margin-bottom: 1rem;
     }
@@ -233,9 +258,20 @@ textarea {
 
          .box__courses--one{
             margin-bottom: 0;
-            flex-direction: row;
             justify-content: space-around;
+            max-width: 485px;
+            margin-right: 0.5rem;
          }
+
+         .box__courses--dos{
+            margin-right: 0;
+         }
+    }
+
+    @media screen and (min-width: 1024px){
+        .box__courses--one{
+            margin-right: 0;
+        }
     }
 
 .text--uppercase{
@@ -278,29 +314,22 @@ textarea {
     color: #4D4D4D;
 }
 
-
-/*
- * Botones
- */
-
- .button{
-     border-radius: 10px;
-     font-family: 'Dosis';
-     text-decoration: none;
-     color: #fff;
-     padding:0.5rem 1rem;
-     margin:1rem 0;
-     display: inline-block;
-     border: 0;
- }
-
-    .button--main{
-        background-color: #FF5253;
-    }
-
 .decoration-none{
      text-decoration: none;
 }
+
+.mb-5{
+    margin-bottom: 80px;
+}
+
+.ml-0{
+    margin-left: 0;
+}
+
+
+
+
+
 
 .footer{
     display: flex;
@@ -358,7 +387,7 @@ textarea {
         font-size: 1.3rem;
         transition: all .3s ease-in;
     }
-
+        .redes_sociales a:hover,
         .header__rs a:hover{
             color:#0071BC;
         }
@@ -505,6 +534,11 @@ textarea {
         margin-right: 0.5rem;
     }
 
+    .list-courses__author div{
+        text-align: right;
+        padding-right: 0.3rem;
+    }
+
     .list-courses__author div a{
         font-weight: 400;
         display: block;
@@ -553,52 +587,48 @@ textarea {
     }
 }
 
-/*Menu de navegación*/
+    /*Menu de navegación*/
 
+    .nav__top a {
+      padding: 0.5em 0;
+      position: relative;
+      letter-spacing: 1px;
 
-
-
-
-.snip1135 a {
-  padding: 0.5em 0;
-  position: relative;
-  letter-spacing: 1px;
-
-}
-.snip1135 a:before,
-.snip1135 a:after {
-  position: absolute;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-}
-.snip1135 a:before {
-  bottom: 0;
-  display: block;
-  height: 3px;
-  width: 0%;
-  content: "";
-  background-color: #2980b9;
-}
-.snip1135 a:after {
-  left: 0;
-  top: 0;
-  padding: 0.38em 0;
-  position: absolute;
-  content: attr(data-hover);
-  color: #0071BC;
-  white-space: nowrap;
-  max-width: 0%;
-  overflow: hidden;
-}
-.snip1135 a:hover:before,
-.snip1135 .current a:before {
-  opacity: 1;
-  width: 100%;
-}
-.snip1135 a:hover:after,
-.snip1135 .current a:after {
-  max-width: 100%;
-}
+    }
+    .nav__top a:before,
+    .nav__top a:after {
+      position: absolute;
+      -webkit-transition: all 0.35s ease;
+      transition: all 0.35s ease;
+    }
+    .nav__top a:before {
+      bottom: 0;
+      display: block;
+      height: 3px;
+      width: 0%;
+      content: "";
+      background-color: #2980b9;
+    }
+    .nav__top a:after {
+      left: 0;
+      top: 0;
+      padding: 0.38em 0;
+      position: absolute;
+      content: attr(data-hover);
+      color: #0071BC;
+      white-space: nowrap;
+      max-width: 0%;
+      overflow: hidden;
+    }
+    .nav__top a:hover:before,
+    .nav__top .current a:before {
+      opacity: 1;
+      width: 100%;
+    }
+    .nav__top a:hover:after,
+    .nav__top .current a:after {
+      max-width: 100%;
+    }
 
 .main{
     margin:1rem 0;
@@ -664,7 +694,6 @@ textarea {
     }
 
     .register__testimonial{
-        /*max-width:90%;*/
         display: none;
     }
 
@@ -712,15 +741,27 @@ textarea {
 @media screen and (min-width: 768px){
     .register .box{
         flex-direction: row;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .register__testimonial{
-        max-width:40%;
+        max-width:55%;
         display: block;
     }
 
     .register__newsletter{
-        max-width: 25%;
+        max-width: 35%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .register__testimonial{
+        max-width:40%;
+    }
+
+    .register__newsletter{
+        max-width: 30%;
     }
 }
 
@@ -780,6 +821,11 @@ textarea {
             .youtube-analytics__information{
                 max-width: 70%;
                 font-size: 1.6rem;
+                margin-bottom: 0;
+            }
+
+            .youtube-analytics__date figure{
+                margin-top: 0;
             }
             .youtube-analytics__number span{
                 font-size:4.5rem;
