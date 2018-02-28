@@ -193,15 +193,22 @@ textarea {
 
     .box__courses--one{
         background-color: #369DC1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         border-radius: 10px;
         padding: 2rem 0;
         max-width: 485px;
         width: 100%;
         margin-bottom: 1rem;
     }
+
+    .box__courses--one a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+         color:#fff;
+    }
+
+
     .box__courses--one div{
         width: 100%;
         text-align: right;
@@ -233,6 +240,10 @@ textarea {
 
          .box__courses--one{
             margin-bottom: 0;
+
+         }
+
+         .box__courses--one a{
             flex-direction: row;
             justify-content: space-around;
          }
@@ -318,6 +329,14 @@ textarea {
 
     .footer__mail{
         margin-bottom: 1rem;
+    }
+
+    .footer li{
+        margin:0.2rem;
+    }
+
+    .footer a:hover{
+        color: #0071BC;
     }
 
 .header{
@@ -445,7 +464,7 @@ textarea {
         border:1px solid #D2D2D2;
         border-radius: 10px;
         overflow: hidden;
-        margin: 1.25rem 0;
+        margin: 1.7rem 0;
         -moz-box-shadow: 1px 1px 3px #D2D2D2;
         -webkit-box-shadow: 1px 1px 3px #D2D2D2;
         box-shadow: 1px 1px 3px #D2D2D2;
@@ -550,6 +569,16 @@ textarea {
 @media screen and (min-width: 768px){
     .nav__main{
         display: block;
+    }
+
+    .nav__main a{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 980px){
+    .nav__main a{
+        font-size: 1.4rem;
     }
 }
 
@@ -792,6 +821,13 @@ textarea {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
+.d-flex{
+    display: flex;
+}
+
+
+
 
 /*
  * Hide visually and from screen readers
