@@ -170,6 +170,25 @@ textarea {
     height: auto;
  }
 
+ .ap-breadcrumbs{
+     border-top: 10px solid #FE5352;
+     padding-top: 2rem;
+     margin-top: 0.5rem;
+ }
+
+
+
+  .title--main{
+      font-weight: 400;
+      margin: 0;
+  }
+
+ .title--main:after{
+    content: ">>";
+    margin-left: 0.5rem;
+
+ }
+
  /*
  * Botones
  */
@@ -217,11 +236,15 @@ textarea {
         flex-direction: column;
     }
 
+    .box__courses--intern{
+        padding-bottom: 2.5rem;
+        padding-top: 2.5rem;
+    }
+
     .box__courses--one{
         background-color: #369DC1;
         border-radius: 10px;
         padding: 2rem 0;
-
         width: 100%;
         margin-bottom: 1rem;
     }
@@ -262,10 +285,12 @@ textarea {
     @media screen and (min-width: 768px){
         .box__courses{
             flex-direction: row;
+
         }
 
          .box__courses--one{
             margin-bottom: 0;
+            margin-right: 0.5rem;
 
          }
 
@@ -282,9 +307,18 @@ textarea {
     }
 
     @media screen and (min-width: 1024px){
-        .box__courses--one{
-            margin-right: 0;
+        .box__courses{
+            padding-right: 30px;
+            padding-left: 30px;
         }
+
+        .box__courses--one{
+            margin-right: 2rem;
+        }
+
+        .box__courses--dos{
+            margin-right: 0;
+         }
     }
 
 .text--uppercase{
@@ -511,8 +545,23 @@ textarea {
         }
 
     @media screen and (min-width: 768px){
+        .list-courses{
+            justify-content: center;
+        }
         .list-courses__item{
-            margin-top: 0;
+            margin-right: 1rem;
+            margin-left: 1rem;
+            margin-bottom: 0;
+        }
+    }
+
+    @media screen and (min-width:1024px){
+        .list-courses{
+            justify-content: space-around;
+        }
+        .list-courses__item{
+            margin-right: 0;
+            margin-left: 0;
         }
     }
 
@@ -664,6 +713,12 @@ textarea {
 .main{
     margin:1rem 0;
 }
+
+.mt-0{
+     margin-top: 0;
+ }
+
+
 
 .slider{
     display: none;
