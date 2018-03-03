@@ -317,6 +317,11 @@ textarea {
          }
     }
 
+.courseInformation{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
 .text--uppercase{
     text-transform: uppercase;
 }
@@ -367,6 +372,10 @@ textarea {
 
 .ml-0{
     margin-left: 0;
+}
+
+.featured-courses{
+    background-color: #F5F5F5;
 }
 
 
@@ -593,7 +602,8 @@ textarea {
 }
 
 
-.list-courses{
+.list-courses,
+.list-courses .box{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -620,7 +630,8 @@ textarea {
         }
 
     @media screen and (min-width: 768px){
-        .list-courses{
+        .list-courses,
+        .list-courses .box{
             justify-content: center;
         }
         .list-courses__item{
@@ -631,7 +642,8 @@ textarea {
     }
 
     @media screen and (min-width:1024px){
-        .list-courses{
+        .list-courses,
+        .list-courses .box{
             justify-content: space-between;
         }
         .list-courses__item{
@@ -793,6 +805,10 @@ textarea {
      margin-top: 0;
  }
 
+ .pb-5{
+     padding-bottom: 5rem;
+ }
+
 
 
 .slider{
@@ -839,6 +855,18 @@ textarea {
     .title--small{
         font-weight: 400;
         font-size: 1.5rem;
+    }
+
+    .title--single{
+        padding-bottom: 1rem;
+        border-bottom:3px solid #CCCCCC;
+        margin-bottom: 2rem;
+    }
+
+    .title--secundary{
+        font-weight: 400;
+        font-size: 1.5rem;
+        margin-bottom: 0;
     }
 
 .register{
@@ -1002,6 +1030,10 @@ textarea {
 
 .d-flex{
     display: flex;
+}
+
+.w-100{
+    flex-basis: 100%;
 }
 
 
