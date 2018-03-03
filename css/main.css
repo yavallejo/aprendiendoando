@@ -285,7 +285,6 @@ textarea {
     @media screen and (min-width: 768px){
         .box__courses{
             flex-direction: row;
-
         }
 
          .box__courses--one{
@@ -307,10 +306,7 @@ textarea {
     }
 
     @media screen and (min-width: 1024px){
-        .box__courses{
-            padding-right: 30px;
-            padding-left: 30px;
-        }
+
 
         .box__courses--one{
             margin-right: 2rem;
@@ -374,8 +370,87 @@ textarea {
 }
 
 
+.filterCourses__form{
+    background-color: #F2F2F2;
+    color: #000;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.filterCourses__select select{
+    padding: 0.2rem 1rem;
+    display: block;
+    width: 250px;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.filterCourses__tags{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.filterCourses__tags span{
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.ap-tags{
+    display: flex;
+    flex-direction: column;
 
 
+}
+    .ap-tags li{
+        list-style-type: none;
+    }
+    .ap-tags a{
+        text-decoration: none;
+        display: block;
+        border-radius:5px;
+        border:1px solid #999999;
+        color:#000;
+        padding: 0.2rem 0.5rem;
+        margin-bottom: 1rem;
+
+    }
+
+        .ap-tags li:last-child a{
+            margin-right: 0;
+        }
+
+    @media screen and (min-width:480px){
+        .ap-tags{
+            flex-direction: row;
+        }
+
+        .ap-tags a{
+            margin-right: 1rem;
+            margin-bottom: 0;
+        }
+    }
+
+    @media screen and (min-width:768px){
+        .filterCourses__form,
+        .filterCourses__tags{
+           flex-direction: row;
+        }
+
+        .filterCourses__select select{
+            margin-bottom: 0;
+        }
+
+        .filterCourses__tags span{
+            margin-bottom: 0;
+        }
+
+
+    }
 
 
 .footer{
@@ -557,7 +632,7 @@ textarea {
 
     @media screen and (min-width:1024px){
         .list-courses{
-            justify-content: space-around;
+            justify-content: space-between;
         }
         .list-courses__item{
             margin-right: 0;
