@@ -317,9 +317,106 @@ textarea {
          }
     }
 
+
+
+
 .courseInformation{
-    display: grid;
-    grid-template-columns: 3fr 1fr;
+    display: flex;
+    flex-direction: column;
+}
+
+    .courseInformation__teacher{
+        border-top: 1px solid #F5F5F5;
+        font-weight: 600;
+        padding: 5rem 0;
+    }
+
+        .courseInformation__teacher--image{
+            max-width: 130px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .courseInformation__teacher--image figcaption{
+            color: #4D4D4D;
+
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+
+        .courseInformation__teacher--price{
+            /*margin-top: 2rem;*/
+        }
+
+        .courseInformation__teacher--titleSecundary{
+            display: block;
+            color: #000000;
+            font-size: 1.5rem;
+        }
+
+        .courseInformation__teacher--value{
+            display: block;
+            color: #4D4D4D;
+            font-size: 1.2rem;
+        }
+            .ap-price{
+                color: #0071BC;
+                font-size: 2.5rem;
+            }
+
+
+
+@media screen and (min-width:768px){
+
+    .courseInformation{
+        flex-direction: row;
+    }
+
+
+    .courseInformation__content{
+        max-width: 70%;
+    }
+
+    .courseInformation__teacher{
+        margin-left: auto;
+        background-color: #FAFDFF;
+        padding: 0 2.5rem;
+        margin-top: 1rem;
+    }
+}
+
+
+@media screen and (min-width:1024px){
+
+    .courseInformation__content{
+        max-width: 70%;
+    }
+
+    .courseInformation__teacher{
+        padding: 0 4rem;
+    }
+}
+
+@media screen and (min-width:1200px){
+
+    .courseInformation__teacher{
+        padding: 0 5rem;
+    }
+}
+
+.courseSyllabus__item{
+    border-bottom: 2px solid #CDCDCD;
+}
+.courseSyllabus__item li{
+    color:#000000;
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+}
+
+.courseSyllabus__title{
+    font-weight: 400;
+    color: #0071BC;
+    font-size: 1.4rem;
 }
 
 .text--uppercase{
@@ -331,7 +428,6 @@ textarea {
     margin:0;
     padding: 0;
 }
-
 .overlay{
     position: absolute;
     background-color:rgba(0, 0, 0, 0.3);
@@ -805,6 +901,22 @@ textarea {
      margin-top: 0;
  }
 
+.mt-1{
+    margin-top: 1rem;
+}
+
+.mt-2{
+    margin-top: 2rem;
+}
+
+.mt-3{
+    margin-top: 3rem;
+}
+
+.mt-5{
+    margin-top: 5rem;
+}
+
  .pb-5{
      padding-bottom: 5rem;
  }
@@ -861,12 +973,14 @@ textarea {
         padding-bottom: 1rem;
         border-bottom:3px solid #CCCCCC;
         margin-bottom: 2rem;
+        color: #232323;
     }
 
     .title--secundary{
         font-weight: 400;
         font-size: 1.5rem;
         margin-bottom: 0;
+        color: #000;
     }
 
 .register{
@@ -1036,7 +1150,14 @@ textarea {
     flex-basis: 100%;
 }
 
+.rounded-circle{
+    border-radius: 50%;
+    border:1px solid #0071BC;
+}
 
+.fontRegular{
+    font-weight: 400;
+}
 
 
 /*
