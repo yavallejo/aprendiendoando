@@ -176,6 +176,31 @@ textarea {
      margin-top: 0.5rem;
  }
 
+ .ap-widget__list a{
+    color: #4D4D4D;
+    text-decoration: none;
+    font-weight: 400;
+    display:block;
+    text-align: left;
+    padding: 0.8rem 0;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #CCCCCC;
+ }
+
+ .ap-widget__list a:hover{
+    color:#0071BC;
+ }
+
+ .ap-widget__list a::before{
+    content: " █ ";
+    color:#0071BC;
+    margin-right:0.5rem;
+ }
+
+ .ap-widget__list a:last-child{
+    border-bottom: 0;
+ }
+
 
 
   .title--main{
@@ -317,8 +342,35 @@ textarea {
          }
     }
 
+.blog .list-courses__information{
+    padding-bottom: 0.2rem;
+}
 
+.blog__footer ul{
+    margin-left: 0.8rem;
+}
 
+.blog__footer li a{
+    text-decoration: none;
+    color: #4D4D4D;
+    font-family:'Raleway', arial;
+    font-size: 0.8rem;
+    display: block;
+    padding: 0 0.2rem;
+}
+
+    .blog__footer li a:hover{
+        color:#0071BC;
+    }
+
+    .blog__footer li a::after{
+        content: " | ";
+        color: #0071BC;
+    }
+
+        .blog__footer li:last-child a::after{
+            content: "";
+        }
 
 .courseInformation{
     display: flex;
@@ -917,6 +969,22 @@ textarea {
     margin-top: 5rem;
 }
 
+.pb-1{
+     padding-bottom: 1rem;
+ }
+
+ .pb-2{
+     padding-bottom: 2rem;
+ }
+
+ .pb-3{
+     padding-bottom: 3rem;
+ }
+
+ .pb-4{
+     padding-bottom: 4rem;
+ }
+
  .pb-5{
      padding-bottom: 5rem;
  }
@@ -1067,6 +1135,14 @@ textarea {
         max-width: 30%;
     }
 }
+
+.yan{
+    /*padding: 3rem 0;*/
+}
+
+    .yan h1{
+        margin: 0;
+    }
 
 
 
