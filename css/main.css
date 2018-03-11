@@ -372,6 +372,13 @@ textarea {
             content: "";
         }
 
+.contact__form{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ccc;
+}
+
 .courseInformation{
     display: flex;
     flex-direction: column;
